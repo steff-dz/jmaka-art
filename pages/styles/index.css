@@ -10,7 +10,11 @@ html,body {
     font-size: 62.5%;
     font-family: sans-serif;
     background-color: #eee;
+
+
 }
+
+
 
 header {
     height: 15vh;
@@ -26,6 +30,11 @@ header {
     position: fixed;
     z-index: 9;
     top: 0;
+
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
 }
 
 span {
@@ -44,6 +53,11 @@ h1 {
 
 main {
     margin-top: 100px;
+
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
 }
 
 #grid-container {
@@ -78,7 +92,6 @@ article img:hover {
     object-fit: contain;
     transform: scale(1.8);
     transition: 2s;
-    
 }
 
 footer {
@@ -87,7 +100,9 @@ footer {
     height: 15vh;
 }
 
-
-
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 
