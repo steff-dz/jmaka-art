@@ -34,12 +34,22 @@ header {
     animation-fill-mode: forwards; */
 }
 
-/* span {
+span {
     background-color: grey;
     height: 2px;
-    width: 70%;
+    /* width: 70%; */
     margin-bottom: 2%;
-} */
+
+    width: 58%;
+    animation: growBar 4s;
+} 
+
+@keyframes growBar {
+    0% {width: 0%;}
+    30% {width: 0%;}
+    100% {width: 58%;}
+}
+
 
 h1 {
     font-size: 3.5rem;
@@ -78,8 +88,6 @@ main {
 
 article {
     width: 100%;
-    /* background-color: lightgrey; */
-
 }
 
 article img {
@@ -102,6 +110,21 @@ footer {
     height: 15vh;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* KEY FRAMES BELOW: */
 @keyframes fadeIn {
     from {opacity: 0;}
@@ -116,6 +139,22 @@ footer {
     30% {left: 40%;}
     100% {left: 80%;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERY BELOW */
